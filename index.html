@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kubus terbuka. Huruf bercahaya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar WebGL</title>
+  <style>
+  * { margin: 0; padding: 0; }
+  html , body { width:100%; height:100%; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+  <!-- <button onclick="fullscreen()">fullscreen</button> -->
+  <canvas id="glcanvas" width="600" height="600">
+    Browser Anda tidak mendukung HTML5 <code>&lt;canvas&gt;</code> element.
+  </canvas>
+  <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
+  <script name="shader" data-src="fragment.glsl" data-type="fragment" data-version="v1"></script>
+  <script type="text/javascript" src="libs/signals.js"></script>
+  <script type="text/javascript" src="libs/glUtils.js"></script>
+  <script type="text/javascript" src="libs/gl-matrix-min.js"></script>
+  <script type="text/javascript" src="index.js"></script>  
+</body>
+</html>
